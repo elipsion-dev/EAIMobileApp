@@ -1,0 +1,96 @@
+body{
+    padding: env(safe-area-inset-top);
+    background-color: black !important;
+}
+#logo {
+    margin-top: 24%;
+    max-height: 100px;
+}
+#menu{
+    font-size: 1.2em;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.eai {
+    font-size: 1.2em;
+    background-color: #414141 !important;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px !important;
+}
+.app{
+    min-height: 100%
+}
+#visitBtns{
+    margin-top: 10%;
+}
+.btns3{
+    margin-top: 2%;
+}
+.mtop3{
+    margin-top: 4%;
+}
+.pics {
+    margin-top: 4%;
+    width: 75px;
+    height: 75px;
+    background-color: lightslategray;
+}
+#sub{
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+.checkbox{
+    zoom: 2.0;
+}
+.checkbox2{
+    zoom: 1.9;
+}
+#checkbxs{
+    margin-top: 30%;
+    margin-left: 12%;
+}
+#contractor, #snow {
+    font-size: 1.5em;
+}
+#locations {
+    float: left;
+    width: 100%;
+    -webkit-appearance: menulist-button;
+    height: 40px;
+    font-size: 1em;
+
+}
+#uploading, #success{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+.continue {
+    margin-top: 8%;
+}
+.blue {
+    color: cornflowerblue;
+}
+.warning {
+    color: rgb(255, 217, 0)
+}
+.btn-xlg {
+    padding: 13px 20px;
+    font-size: 20px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+
+

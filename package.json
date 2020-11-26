@@ -1,0 +1,71 @@
+{
+    "name": "EAI Mobile App",
+    "description": "EAI mobile App",
+    "version": "2.0",
+    "license": "Apache-2.0",
+    "homepage": "http://github.com/elipsion/EAIservices.git",
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/elipsion/EAIservices.git"
+    },
+    "keywords": [
+      "EAI",
+      "cordova",
+      "phonegap",
+      "phonegap build",
+      "phonegap/build"
+    ],
+    "preferGlobal": true,
+    "main": "./lib/main.js",
+    "bin": {
+      "phonegap": "./bin/phonegap.js"
+    },
+    "scripts": {
+      "test": "npm run jasmine && npm run eslint",
+      "jasmine": "jasmine --config=spec/support/jasmine.json",
+      "eslint": "eslint lib bin spec",
+      "cover": "istanbul cover --print detail -x **/spec/** jasmine -- --color"
+    },
+    "engineStrict": true,
+    "engines": {
+      "node": ">=8.0.0"
+    },
+    "dependencies": {
+      "archiver": "^1.0.0",
+      "colors": "0.6.0-1",
+      "configstore": "1.4.0",
+      "connect-phonegap": "^0.25.0",
+      "cordova": "^9.0.0",
+      "insight": "^0.10.1",
+      "jasmine": "^3.2.0",
+      "minimist": "0.1.0",
+      "opener": "1.4.1",
+      "opn": "^4.0.2",
+      "os-name": "2.0.1",
+      "phonegap-build": "^1.0.0",
+      "pluralize": "0.0.4",
+      "prompt": "^1.0.0",
+      "qrcode-terminal": "0.9.4",
+      "request": "^2.88.0",
+      "shelljs": "0.1.4",
+      "update-notifier": "^0.6.0"
+    },
+    "devDependencies": {
+      "chdir": "0.0.x",
+      "eslint": "^4.7.2",
+      "eslint-config-semistandard": "^11.0.0",
+      "eslint-config-standard": "^10.2.1",
+      "eslint-plugin-import": "^2.7.0",
+      "eslint-plugin-node": "^5.1.1",
+      "eslint-plugin-promise": "^3.5.0",
+      "eslint-plugin-standard": "^3.0.1",
+      "istanbul": "0.4.5"
+    },
+    "optionalDependencies": {},
+    "contributors": [
+      {
+        "name": "Jacob Briggs",
+        "email": "jdbriggs81@gmail.com",
+        "url": "http://github.com/elipsion"
+      }]
+  }

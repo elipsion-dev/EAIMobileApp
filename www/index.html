@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, viewport-fit=cover">    <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; img-src * 'self' data:; style-src * 'unsafe-inline'; script-src * 'self' 'unsafe-inline' 'unsafe-eval'; ">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>EAI Mobile App</title>
+</head>
+
+<body>
+  
+    <div class="app text-center">
+        <div id="main">
+
+            <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+                <h5><a class="navbar-brand eai" href="#">EAI Mobile</a></h5>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler bg-dark text-white" id='menu'><span class='navbar-toggler-icon'></span></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <h4 class='text-danger'><a class="nav-link text-danger" href="index.html">Reset</a></h4>
+                    </li>
+                  </ul>
+                </div>
+
+            </nav>
+
+            
+
+            <!-- Page 1 -->
+        <div id="page1" class='text-center'>
+          <img id='logo' src="img/Snow_Plow.jpg" alt="logo" class="mx-auto">
+          <div class="btn-group-toggle" id='visit' data-toggle="buttons">
+            <div id="visitBtns">
+              <button id='newVisit' type="button" class="btn btn-xlg btn-secondary btns" data-toggle="button" aria-pressed="false" autocomplete="off">
+              New Visit
+              </button>
+            
+              <button id='returnVisit' type="button" class="btn btn-xlg btn-secondary btns" data-toggle="button" aria-pressed="false" autocomplete="off">
+              Return Visit
+              </button>
+            </div>
+        </div>
+          
+          <br>
+
+          <h5 class='mtop3 blue'>CONTRACTOR ID : </h5>
+          <select name="contractor" id="contractor">
+            <option value="" selected disabled hidden>Please Select Contractor</option>
+            <option value="1">1001</option>
+            <option value="2">1002</option>
+            <option value="3">1003</option>
+            <option value="4">1004</option>
+            <option value="5">1005</option>
+            <option value="6">1006</option>
+            <option value="7">1007</option>
+            <option value="8">1008</option>
+            <option value="7">1009</option>
+            <option value="8">1010</option>
+            <option value="1">1011</option>
+            <option value="2">1012</option>
+            <option value="3">1013</option>
+            <option value="4">1014</option>
+            <option value="5">1015</option>
+            <option value="6">1016</option>
+            <option value="7">1017</option>
+          </select>
+
+          <div id="continue1" class='continue mtop'>
+              <button type="button" class="btn btn-xlg btn-success" id='continue1'>Continue</button>
+          </div>
+      </div>
+
+      <!-- PAGE 2 -->
+      <div id="page2">
+        <div id="checkbxs" class='text-left'>
+          <div class="checkbox">
+            <label><input type="checkbox" value="1" id='saltedParkingLot' class='checks'> Salted Parking Lot</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="2" id='saltedSidewalks'  class='checks'> Salted Sidewalks</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="3" id='plowedParkingLot' class='checks'> Plowed Parking Lot</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="1" id='shoveledSidewalks' class='checks'> Shoveled Sidewalks</label>
+          </div>
+        </div>
+          
+          
+          <h5 class='mtop3 blue'>LOCATION : </h5>
+            <select name="locations" id="locations">
+              <option value="" selected disabled hidden>Please Select Location</option>
+            </select>
+            <br>
+
+            <h5 class='continue blue'>SNOW AMOUNT : </h5>
+            <select name='snow' id="snow">
+              <option value="" selected disabled hidden>Inch(es)</option>
+              <option value="1">1 inch</option>
+              <option value="2">2 inches</option>
+              <option value="3">3 inches</option>
+              <option value="4">4 inches</option>
+              <option value="5">5 inches</option>
+              <option value="1">6 inches</option>
+              <option value="2">7 inches</option>
+              <option value="3">8 inches</option>
+              <option value="4">9 inches</option>
+              <option value="5">10 inches</option>
+              <option value="1">11 inches</option>
+              <option value="2">12 inches</option>
+              <option value="3">13 inches</option>
+              <option value="4">14 inches</option>
+              <option value="5">15 inches</option>
+              <option value="1">16 inches</option>
+              <option value="2">17 inches</option>
+              <option value="3">18 inches</option>
+              <option value="4">19 inches</option>
+              <option value="5">20 inches</option>
+              <option value="1">21 inches</option>
+              <option value="2">22 inches</option>
+              <option value="3">23 inches</option>
+              <option value="4">24 inches</option>
+              <option value="5">25 inches</option>
+              <option value="1">26 inches</option>
+              <option value="2">27 inches</option>
+              <option value="3">28 inches</option>
+          </select>
+
+          <div id="continue2" class='continue'>
+            <button type="button" class="btn btn-xlg btn-success" id='continue2'>Continue</button>
+        </div>
+      </div>
+
+      <!-- PAGE 3 -->
+      <div id="page3" class='text-center'>
+        <img id='logo' src="img/Snow_Plow.jpg" alt="logo" class="mx-auto">
+          <h5 class='mtop3 blue'>PLEASE TAKE 4 PICTURES</h5>
+          <button type="button" class="btn btn-xlg btn-success" id='camera'>Camera</button><br>
+          <h5 class='warning mtop3'><b>PHONE SIDEWAYS PLEASE</b></h5>
+          <img id='pic1' class='pics mx-auto picBlock'>
+          <img id='pic2' class='pics mx-auto picBlock'>
+          <img id='pic3' class='pics mx-auto picBlock'>
+          <img id='pic4' class='pics mx-auto picBlock'>
+          <h5 class='warning mtop3'><b>PHONE SIDEWAYS PLEASE</b></h5>
+
+          <div id="sub">
+            <button type="button" class="btn btn-xlg btn-success" id='submit'>Generate Email Report</button>
+          </div>
+      </div>
+
+      <!-- UPLOADING PAGE -->
+      <h3 class='blue text-center' id='uploading'><b>Uploading...</b></h2>
+
+        <!-- SUCCESS PAGE -->
+        <div id="success" class='text-center'>
+          <h3 class='text-success text-center'><b>Report Sent!</b></h2>
+          <h5 class='text-warning text-center'>Resetting...</h5>
+        </div>
+      
+
+
+        </div>
+    </div>
+
+
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
